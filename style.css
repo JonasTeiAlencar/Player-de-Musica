@@ -1,0 +1,147 @@
+body,
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(117, 117, 117) 50%, #282727);
+  color: rgb(222, 222, 222);
+  box-sizing: border-box;
+}
+
+.back {
+    font-size: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back:hover {
+    background: rgb(104, 104, 104);
+    border: 0.1px solid white;
+    border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 340px;
+  background: linear-gradient(rgb(102, 101, 101), #1a1a1a);
+  box-shadow: 25px 25px 30px 30px #212121;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(45, 45, 45);
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0.7px solid white;
+  box-shadow: 5px 5px 30px 5px black;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  margin: 15px;
+  transition: width, height 0.3s;
+}
+
+img:hover {
+    width: 302px;
+}
+
+.descricao {
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.duracao {
+  width: 300px;
+  margin-top: 25px;
+}
+
+.barra {
+  width: 300px;
+  height: 7px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -0.5px;
+}
+
+progress {
+  height: 6px;
+  width: 0;
+  background-color: #333;
+}
+
+.ponto {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.tempo {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.player {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  box-shadow: 2px 2px 20px #202020;
+}
+
+.botao-play, .setas:hover {
+    background: rgba(81, 80, 80, 0.2);
+    border-radius: 10px;
+}
+
+.botao-play,
+.botao-pause {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.setas {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.botao-pause {
+  display: none;
+}
+
+footer {
+    border-top: 1px solid #333;
+    bottom: 0;
+    text-align: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    opacity: 0.1;
+}
